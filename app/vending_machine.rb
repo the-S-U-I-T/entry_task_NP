@@ -10,7 +10,7 @@ class VendingMachine
 
   def initialize
     @coin_manager = CoinManager.new
-    @cproduct_catalog = roductCatalog.new
+    @product_catalog = ProductCatalog.new
   end
 
   def insert(amount)
