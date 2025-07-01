@@ -7,10 +7,12 @@ class VendingMachine
   attr_accessor :products
   attr_accessor :coin_manager
   attr_accessor :product_catalog
+  attr_accessor :transaction_processor
 
   def initialize
     @coin_manager = CoinManager.new
     @product_catalog = ProductCatalog.new
+    @transaction_processor = TransactionProcessor.new
   end
 
   def insert(amount)
