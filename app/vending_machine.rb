@@ -5,7 +5,12 @@ require_relative 'display_manager'
 
 class VendingMachine
   attr_accessor :products
-  
+  attr_accessor :coin_manager
+
+  def initialize
+    @coin_manager = CoinManager.new
+  end
+
   def insert(amount)
     @coin_manager.add_coins(amount)
     balance
