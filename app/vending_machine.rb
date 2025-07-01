@@ -6,9 +6,11 @@ require_relative 'display_manager'
 class VendingMachine
   attr_accessor :products
   attr_accessor :coin_manager
+  attr_accessor :product_catalog
 
   def initialize
     @coin_manager = CoinManager.new
+    @cproduct_catalog = roductCatalog.new
   end
 
   def insert(amount)
