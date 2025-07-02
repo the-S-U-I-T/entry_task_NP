@@ -22,6 +22,8 @@ class CoinManager
   end
 
   def reset_balance
-    20
+    returned_amount = @balance
+    @balance = 0.0
+    returned_amount
   end
 end
