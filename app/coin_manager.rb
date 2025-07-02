@@ -2,11 +2,12 @@ class CoinManager
    attr_reader :balance
 
   def initialize
-    @balance = nil
+    @balance = 0.0
   end
 
   def add_coins(amount)
-    @balance
+    return false if amount <= 0
+      @balance +=amount
   end
 
   def get_balance
