@@ -15,6 +15,7 @@ class DisplayManager
     basic_result = "Dispensed #{product_name} with change #{change}"
     last_transaction = @transaction_processor.last_transaction_details
 
+    basic_result += "\nTransaction details: #{last_transaction}" if last_transaction
     basic_result
   end
 end
